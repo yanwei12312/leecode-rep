@@ -37,10 +37,11 @@ public class Solution {
     }
 
     private void getPostOrder(TreeNode root,List<Integer> result) {
-        if(root == null) return;
-        getPostOrder(root.left,result);
-        getPostOrder(root.right,result);
+        if (root == null) return;
+        getPostOrder(root.left, result);
+        getPostOrder(root.right, result);
         // 后序遍历
         result.add(root.val);
+    }
 
 }
